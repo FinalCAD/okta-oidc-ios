@@ -1,0 +1,140 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name OktaOidc
+import Foundation
+@_exported import OktaOidc
+import Swift
+public enum OktaOidcError : Swift.Error {
+  case APIError(Swift.String)
+  case errorFetchingFreshTokens(Swift.String)
+  case JWTDecodeError
+  case JWTValidationError(Swift.String)
+  case missingConfigurationValues
+  case noBearerToken
+  case noDiscoveryEndpoint
+  case noIntrospectionEndpoint
+  case noPListGiven
+  case pListParseFailure
+  case notConfigured
+  case noRefreshToken
+  case noRevocationEndpoint
+  case noTokens
+  case noUserInfoEndpoint
+  case parseFailure
+  case missingIdToken
+  case unexpectedAuthCodeResponse
+  case unableToGetAuthCode
+  case redirectServerError(Swift.String)
+}
+extension OktaOidcError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+@objc public class OktaOidcConfig : ObjectiveC.NSObject {
+  @objc public static let defaultPlistName: Swift.String
+  @objc final public let clientId: Swift.String
+  @objc final public let issuer: Swift.String
+  @objc final public let scopes: Swift.String
+  @objc final public let redirectUri: Foundation.URL
+  @objc final public let logoutRedirectUri: Foundation.URL?
+  @objc weak public var requestCustomizationDelegate: OktaOidc.OktaNetworkRequestCustomizationDelegate?
+  @available(iOS 13.0, *)
+  @objc public var noSSO: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc final public let additionalParams: [Swift.String : Swift.String]?
+  @objc public static func `default`() throws -> OktaOidc.OktaOidcConfig
+  @objc public init(with dict: [Swift.String : Swift.String]) throws
+  @objc convenience public init(fromPlist plistName: Swift.String) throws
+  public class func setUserAgent(value: Swift.String)
+  @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc public protocol OktaOidcBrowserProtocolIOS {
+  @objc func signInWithBrowser(from presenter: UIKit.UIViewController, callback: @escaping ((OktaOidc.OktaOidcStateManager?, Swift.Error?) -> Swift.Void))
+  @objc func signOutOfOkta(_ authStateManager: OktaOidc.OktaOidcStateManager, from presenter: UIKit.UIViewController, callback: @escaping ((Swift.Error?) -> Swift.Void))
+  @objc func cancelBrowserSession(completion: (() -> Swift.Void)?)
+}
+@objc public class OktaOidc : ObjectiveC.NSObject {
+  @objc final public let configuration: OktaOidc.OktaOidcConfig
+  @objc public init(configuration: OktaOidc.OktaOidcConfig? = nil) throws
+  @objc public func authenticate(withSessionToken sessionToken: Swift.String, callback: @escaping ((OktaOidc.OktaOidcStateManager?, Swift.Error?) -> Swift.Void))
+  @objc public func hasActiveBrowserSession() -> Swift.Bool
+  @objc deinit
+  @objc override dynamic public init()
+}
+extension OktaOidc : OktaOidc.OktaOidcBrowserProtocolIOS {
+  @objc dynamic public func signInWithBrowser(from presenter: UIKit.UIViewController, callback: @escaping ((OktaOidc.OktaOidcStateManager?, Swift.Error?) -> Swift.Void))
+  @objc dynamic public func signOutOfOkta(_ authStateManager: OktaOidc.OktaOidcStateManager, from presenter: UIKit.UIViewController, callback: @escaping ((Swift.Error?) -> Swift.Void))
+  public func signOut(authStateManager: OktaOidc.OktaOidcStateManager, from presenter: UIKit.UIViewController, progressHandler: @escaping ((OktaOidc.OktaSignOutOptions) -> Swift.Void), completionHandler: @escaping ((Swift.Bool, OktaOidc.OktaSignOutOptions) -> Swift.Void))
+  public func signOut(with options: OktaOidc.OktaSignOutOptions, authStateManager: OktaOidc.OktaOidcStateManager, from presenter: UIKit.UIViewController, progressHandler: @escaping ((OktaOidc.OktaSignOutOptions) -> Swift.Void), completionHandler: @escaping ((Swift.Bool, OktaOidc.OktaSignOutOptions) -> Swift.Void))
+  @objc dynamic public func cancelBrowserSession(completion: (() -> Swift.Void)? = nil)
+}
+public struct OktaSignOutOptions : Swift.OptionSet {
+  public let rawValue: Swift.Int
+  public init(rawValue: Swift.Int)
+  public static let revokeAccessToken: OktaOidc.OktaSignOutOptions
+  public static let revokeRefreshToken: OktaOidc.OktaSignOutOptions
+  public static let signOutFromOkta: OktaOidc.OktaSignOutOptions
+  public static let removeTokensFromStorage: OktaOidc.OktaSignOutOptions
+  public static let revokeTokensOptions: OktaOidc.OktaSignOutOptions
+  public static let allOptions: OktaOidc.OktaSignOutOptions
+  public typealias Element = OktaOidc.OktaSignOutOptions
+  public typealias ArrayLiteralElement = OktaOidc.OktaSignOutOptions
+  public typealias RawValue = Swift.Int
+}
+@objc @_inheritsConvenienceInitializers open class OktaOidcUtils : ObjectiveC.NSObject {
+  @objc deinit
+  @objc override dynamic public init()
+}
+public enum OktaOidcKeychainError : Swift.Error {
+  case codingError
+  case failed(Swift.String)
+  case notFound
+}
+@objc @_inheritsConvenienceInitializers public class OktaOidcKeychain : ObjectiveC.NSObject {
+  public class func set(key: Swift.String, string: Swift.String, accessGroup: Swift.String? = nil, accessibility: CoreFoundation.CFString? = nil) throws
+  public class func set(key: Swift.String, data: Foundation.Data, accessGroup: Swift.String? = nil, accessibility: CoreFoundation.CFString? = nil) throws
+  public class func get(key: Swift.String) throws -> Swift.String
+  public class func get(key: Swift.String) throws -> Foundation.Data
+  public class func remove(key: Swift.String) throws
+  public class func clearAll()
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc open class OktaOidcStateManager : ObjectiveC.NSObject, Foundation.NSSecureCoding {
+  @objc public static var supportsSecureCoding: Swift.Bool
+  @objc open var authState: OktaOidc.OKTAuthState
+  @objc open var accessibility: CoreFoundation.CFString
+  @objc open var accessToken: Swift.String? {
+    @objc get
+  }
+  @objc open var idToken: Swift.String? {
+    @objc get
+  }
+  @objc open var refreshToken: Swift.String? {
+    @objc get
+  }
+  @objc public init(authState: OktaOidc.OKTAuthState, accessibility: CoreFoundation.CFString = kSecAttrAccessibleWhenUnlockedThisDeviceOnly)
+  @objc required convenience public init?(coder decoder: Foundation.NSCoder)
+  @objc public func encode(with coder: Foundation.NSCoder)
+  @objc public func validateToken(idToken: Swift.String?) -> Swift.Error?
+  @objc public static func decodeJWT(_ token: Swift.String) throws -> [Swift.String : Any]
+  @objc public func renew(callback: @escaping ((OktaOidc.OktaOidcStateManager?, Swift.Error?) -> Swift.Void))
+  @objc public func introspect(token: Swift.String?, callback: @escaping ([Swift.String : Any]?, Swift.Error?) -> Swift.Void)
+  @objc public func revoke(_ token: Swift.String?, callback: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc public func removeFromSecureStorage() throws
+  @objc public func clear()
+  @objc public func getUser(_ callback: @escaping ([Swift.String : Any]?, Swift.Error?) -> Swift.Void)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc extension OktaOidcStateManager {
+  @objc @available(*, deprecated, message: "Please use readFromSecureStorage(for config: OktaOidcConfig) function")
+  dynamic public class func readFromSecureStorage() -> OktaOidc.OktaOidcStateManager?
+  @objc dynamic public class func readFromSecureStorage(for config: OktaOidc.OktaOidcConfig) -> OktaOidc.OktaOidcStateManager?
+  @objc dynamic public func writeToSecureStorage()
+}

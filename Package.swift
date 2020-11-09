@@ -12,6 +12,6 @@ let package = Package(
         .library(name: "OktaOidc", targets: ["OktaOidc"])
     ],
     targets: [
-        .binaryTarget(name: "OktaOidc", path: "artifact/OktaOidc.xcframework.zip")
+        .binaryTarget(name: "OktaOidc", path: "artifact/OktaOidc.xcframework")
     ]
 )
