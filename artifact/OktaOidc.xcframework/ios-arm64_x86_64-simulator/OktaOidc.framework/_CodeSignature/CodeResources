@@ -154,7 +154,7 @@
 		</data>
 		<key>Headers/OktaOidc-Swift.h</key>
 		<data>
-		7S59wUEOw+q+nuZuboO8BnKlBo0=
+		rhm+MGKJhw0TV5QMJxWeaT+ouV4=
 		</data>
 		<key>Headers/OktaOidc.h</key>
 		<data>
@@ -166,55 +166,55 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Q/K8oJ39BrWPoXS9lAbofL/E+8c=
+		FozypmdkyStlhP/TKDsnMkWTTqE=
 		</data>
 		<key>Modules/OktaOidc.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		0bkqvALlqgOs182hmxgqRxJhBPk=
+		FRfWtz3gVAg/9713M/M51yusxLc=
 		</data>
 		<key>Modules/OktaOidc.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		N+BSdSNEhmwn6K8YUaMbbsCDDNg=
+		jqPYGWqTNjwh7f9PI3d0LUnduV4=
 		</data>
 		<key>Modules/OktaOidc.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		pk0B30WpoV9PizW5vSqxdj9SXlk=
+		J2ehIznz773AMU32OuZpHKhPX1A=
 		</data>
 		<key>Modules/OktaOidc.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		0bkqvALlqgOs182hmxgqRxJhBPk=
+		FRfWtz3gVAg/9713M/M51yusxLc=
 		</data>
 		<key>Modules/OktaOidc.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		N+BSdSNEhmwn6K8YUaMbbsCDDNg=
+		jqPYGWqTNjwh7f9PI3d0LUnduV4=
 		</data>
 		<key>Modules/OktaOidc.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		pk0B30WpoV9PizW5vSqxdj9SXlk=
+		J2ehIznz773AMU32OuZpHKhPX1A=
 		</data>
 		<key>Modules/OktaOidc.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		jFjBhW9+2uiSd7b2dpYA+vtshNk=
+		spzEuTvxHfOIpsAoiDhpbJFL48k=
 		</data>
 		<key>Modules/OktaOidc.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		8uvQKnUAhBTjODlyu/MxiY8cHKg=
+		bu76K7fJd4IWaiF1nC7ramnQe6A=
 		</data>
 		<key>Modules/OktaOidc.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		3M/WfvwhhBX2PaXLY/fZYzKdyxg=
+		4gB0nEsuDxHoW6c5jO35OcvCOz4=
 		</data>
 		<key>Modules/OktaOidc.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		jFjBhW9+2uiSd7b2dpYA+vtshNk=
+		spzEuTvxHfOIpsAoiDhpbJFL48k=
 		</data>
 		<key>Modules/OktaOidc.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		8uvQKnUAhBTjODlyu/MxiY8cHKg=
+		bu76K7fJd4IWaiF1nC7ramnQe6A=
 		</data>
 		<key>Modules/OktaOidc.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		3M/WfvwhhBX2PaXLY/fZYzKdyxg=
+		4gB0nEsuDxHoW6c5jO35OcvCOz4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -486,7 +486,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7bbmXI0iUfR6K7sAyesCDFEgqW/9v2Nr3xdmY73tsXQ=
+			RQW387+Fn6onTmHGM/JXN74Uy29LHkfjb2zEH4Udbm4=
 			</data>
 		</dict>
 		<key>Headers/OktaOidc.h</key>
@@ -507,84 +507,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6GgJKr34x8UwCgg50DgELYF8dJQ+RqV3mFzQNOGUmPM=
+			v+Nn7a7X45LJBDjRbPrzTETBecIZ672YXJNpv36cQj0=
 			</data>
 		</dict>
 		<key>Modules/OktaOidc.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MkWAqc8R1dkfjALxY0uIr+IGDd7nmMpkdDXLihvdMsA=
+			ud+Y+zx+EfI8PvoLxphqGLyDKa2YUTuTNJF82SaNBuo=
 			</data>
 		</dict>
 		<key>Modules/OktaOidc.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RW0LicvxBBEBDJYT1+FDJaetl7/JPFWZ+HpWZ/briRM=
+			QzcM2RT/A5MydcbrN6Vv0nH9nZ2q7TV2piWkhnykpzQ=
 			</data>
 		</dict>
 		<key>Modules/OktaOidc.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6GgJKr34x8UwCgg50DgELYF8dJQ+RqV3mFzQNOGUmPM=
+			v+Nn7a7X45LJBDjRbPrzTETBecIZ672YXJNpv36cQj0=
 			</data>
 		</dict>
 		<key>Modules/OktaOidc.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MkWAqc8R1dkfjALxY0uIr+IGDd7nmMpkdDXLihvdMsA=
+			ud+Y+zx+EfI8PvoLxphqGLyDKa2YUTuTNJF82SaNBuo=
 			</data>
 		</dict>
 		<key>Modules/OktaOidc.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RW0LicvxBBEBDJYT1+FDJaetl7/JPFWZ+HpWZ/briRM=
+			QzcM2RT/A5MydcbrN6Vv0nH9nZ2q7TV2piWkhnykpzQ=
 			</data>
 		</dict>
 		<key>Modules/OktaOidc.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			THQxlQBY8xLnLkaCppwHhFzkBjbcAsP6XA09NXpuQJQ=
+			grUMnI6fGZWwb0Pljez4Zra07EhMYF/h0drGW8NrjOY=
 			</data>
 		</dict>
 		<key>Modules/OktaOidc.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ESyiX0bU3u3mxGucnICCAbCZYKCdW+uhVg1OoAC30qk=
+			L9IBRRdARDAS40Rv17YTTAPyt0gAY14//6cW0VEtDV0=
 			</data>
 		</dict>
 		<key>Modules/OktaOidc.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ruoO4daUZ4ID2NDBRSc98hKYF2dNXn1X0YrQvUjNb0k=
+			CaUuD1MoMJ7X/Djml7hHS/lAZPt/tcFiHhtwZxtUmHM=
 			</data>
 		</dict>
 		<key>Modules/OktaOidc.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			THQxlQBY8xLnLkaCppwHhFzkBjbcAsP6XA09NXpuQJQ=
+			grUMnI6fGZWwb0Pljez4Zra07EhMYF/h0drGW8NrjOY=
 			</data>
 		</dict>
 		<key>Modules/OktaOidc.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ESyiX0bU3u3mxGucnICCAbCZYKCdW+uhVg1OoAC30qk=
+			L9IBRRdARDAS40Rv17YTTAPyt0gAY14//6cW0VEtDV0=
 			</data>
 		</dict>
 		<key>Modules/OktaOidc.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ruoO4daUZ4ID2NDBRSc98hKYF2dNXn1X0YrQvUjNb0k=
+			CaUuD1MoMJ7X/Djml7hHS/lAZPt/tcFiHhtwZxtUmHM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
